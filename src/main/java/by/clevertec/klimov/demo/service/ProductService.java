@@ -5,5 +5,7 @@ import by.clevertec.klimov.demo.dto.ProductDto;
 import java.util.List;
 
 public interface ProductService {
-    int create(List<ProductDto> productDtos);
+  int create(List<ProductDto> productDtos);
+
+  List<ProductDto> getProductsByIds(List<Long> ids);
 }
